@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "E-Tongue Herbal Monitor",
+    "slug": "e-tongue-herbal-monitor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#111827"
+    },
+    "updates": {
+      "enabled": false,
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.etongue.herbalmonitor",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to capture sample photos for herbal quality analysis."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#111827"
+      },
+      "permissions": [
+        "CAMERA",
+        "VIBRATE",
+        "android.permission.CAMERA",
+        "android.permission.VIBRATE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.etongue.herbalmonitor"
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow E-Tongue to access your camera to capture sample photos."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b9bf0ee4-3ff2-4559-8360-8380f9b45969"
+      }
+    },
+    "owner": "shahid27"
+  }
+}
